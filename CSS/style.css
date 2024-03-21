@@ -1,9 +1,0 @@
-*,
-*::before,
-*::after {
-    margin: 0px;
-    padding: 0px;
-}
-
-/*MOBILE CONFIGURATION*/
-@media screen and (width: 768px) {}
