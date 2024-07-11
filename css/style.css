@@ -11,24 +11,6 @@ body {
     background-color: var(--background-color);
 }
 
-header {
-    display: grid;
-    height: 50px;
-    grid-template-columns: auto 50px;
-}
-
-.navigation ul {
-    display: flex;
-    justify-content: left;
-    align-content: center;
-    list-style-type: none;
-}
-
-.navigation li {
-    padding: 20px 20px;
-    width: 70px;
-}
-
 .navigation a {
     color: var(--writing);
     text-decoration: none;
@@ -37,9 +19,43 @@ header {
 
 .navigation a:hover {
     font-size: larger;
-    text-shadow: 0px 0px 10px var(--writing);
+    text-shadow: 0px 0px 10px 0px var(--writing-shadow);
 
 }
 
 /*MOBILE CONFIGURATION*/
-@media screen and (width: 768px) {}
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+    }
+
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+    }
+
+}
+
+/*WEB CONFIGURATION*/
+@media screen and (min-width: 768px) {
+    
+        header {
+            display: grid;
+            height: 50px;
+            grid-template-columns: auto 50px;
+        }
+    
+        .navigation ul {
+            display: flex;
+            justify-content: left;
+            align-content: center;
+            list-style-type: none;
+            margin-left: 80px;
+        }
+    
+        .navigation li {
+            padding: 20px 20px;
+            width: 80px;
+        }
+}
