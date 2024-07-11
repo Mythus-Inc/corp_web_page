@@ -1,4 +1,5 @@
 :root {
-    --background-color: rgb(28, 28, 28);
-    --white: rgb(250, 250, 250);
+    --background-color: #ededed;
+    --writing: #373737;
+    --writing-shadow: #373737;
 }
