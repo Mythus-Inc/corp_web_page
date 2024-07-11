@@ -1,9 +1,160 @@
+@import url(variable.css);
+
+
+
 *,
 *::before,
 *::after {
     margin: 0px;
     padding: 0px;
+    font-family: "Inter", sans-serif;
 }
+
+body {
+    background-color: var(--body-background);
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 5px;
+    font-weight: 140%;
+}
+
+.container-nav ul {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    padding-left: 10px;
+
+}
+
+.container-nav li {
+    cursor: pointer;
+}
+
+.container-nav a {
+    font-size: large;
+
+}
+
+.container-nav ul li {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+.card-equipe h1 {
+    font-size: medium;
+    font-weight: 700;
+    color: var(--font-color);
+    margin: 0.5rem 0;
+}
+
+.card-equipe p {
+    font-size: small;
+    font-weight: 700;
+    color: var(--font-color);
+    margin: 0.5rem 0;
+}
+
+
+.card-equipe {
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 15px;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+
+.card-equipe img {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-right: 30px;
+    box-shadow: 0px 0px 5px 0px #000000;
+}
+
+.card-equipe-container {
+    display: flex;
+    flex-direction: row; 
+    margin-top: 30px; 
+    padding-bottom: 10px;  
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card-equipe-container-description {
+    background-color: #D1D1D1; 
+    width: 557px;
+    height: 85px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.card-equipe-container-description h1, p, a {
+    justify-content: left;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.card-equipe-container-description a {
+    justify-content: left;
+    margin-top: -5px;
+    margin-bottom: 0 auto;
+    font-size: x-small;
+    cursor: pointer;
+}
+
+.container-nav li:hover {
+    color: var(--hover-color);
+  }
+
+  .card-equipe-container-description a:hover {
+    color: var(--hover-color);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*MOBILE CONFIGURATION*/
 @media screen and (width: 768px) {}
