@@ -17,6 +17,7 @@
     --color-whitesmoke: #ededed;
     --color-darkslategray-100: #373737;
     --color-lightgray: #d1d1d1;
+    --color-button: #525252;
     
     /* border radiuses */
     --br-3xs: 10px;
@@ -36,11 +37,13 @@ header {
     grid-template-columns: auto 50px;
 }
 
-textarea{
+textarea {
     width: 100%;
     height: 100%;
     background-color: var(--color-lightgray);
     border-radius: var(--br-large);
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .contato {
@@ -51,6 +54,10 @@ textarea{
     text-align: center;
     color: #656565;
     font-size: var(--font-size-8xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .navigation ul {
@@ -94,11 +101,27 @@ textarea{
 
 .message-input {
     position: relative;
-    width: 1075px;
+    width: 100%;
+    max-width: 1075px;
     height: 511px;
     margin: 50px auto;
 }
 
+.button-send {
+    width: 142px;
+    height: 66px;
+    color: #ffffff;
+    background-color: var(--color-button);
+    border: none;
+    border-radius: var(--br-large);
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.button-send:hover {
+    background-color: #929292;
+}
 
 /*MOBILE CONFIGURATION*/
 @media screen and (width: 768px) {}
