@@ -3,6 +3,7 @@
 *::after {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 :root {
@@ -29,6 +30,7 @@ body {
     margin: 0;
     line-height: normal;
     font-family: var(--font-mako);
+    background-color: var(--color-whitesmoke);
 }
 
 header {
@@ -107,6 +109,7 @@ textarea {
     font-size: 22px;
     padding: 10px;
     box-sizing: border-box;
+    border-radius: var(--br-small);
 }
 
 .message-input {
