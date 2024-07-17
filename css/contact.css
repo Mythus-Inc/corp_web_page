@@ -37,13 +37,14 @@ header {
     grid-template-columns: auto 50px;
 }
 
-textarea {
-    width: 100%;
+textarea {width: 100%;
     height: 100%;
     background-color: var(--color-lightgray);
     border-radius: var(--br-large);
     padding: 10px;
     box-sizing: border-box;
+    font-family: var(--font-mako); 
+    font-size: 22px
 }
 
 .contato {
