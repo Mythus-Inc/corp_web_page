@@ -55,6 +55,7 @@ body {
 
     .nav-list {
         display: none;
+        background-color: var(--list-background-color);
     }
 
     .nav-toggle-show {
@@ -62,9 +63,7 @@ body {
     }
 
     .nav-item-toggle {
-        display: initial;
-        position: absolute;
-        cursor: pointer;
+        display: flex;
         margin: 20px 20px;
         width: 40px;
         height: 40px;
