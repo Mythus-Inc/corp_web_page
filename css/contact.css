@@ -171,4 +171,10 @@ textarea {
         border-radius: var(--br-small); /* Ajusta o border-radius para um visual mais suave */
     }
 
+    .message-input {
+        position: relative;
+        width: 90%;
+        height: 300px;
+        margin: 50px auto;
+    }
 }
