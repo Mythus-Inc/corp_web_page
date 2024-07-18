@@ -21,6 +21,10 @@ body {
     width: 100%;
 }
 
+.nav-list {
+    display: flex;
+}
+
 .navigation a {
     color: var(--text);
     text-decoration: none;
@@ -33,15 +37,37 @@ body {
 
 }
 
+.nav-item-toggle {
+    display: none;
+}
+
 /*MOBILE CONFIGURATION*/
 @media screen and (max-width: 768px) {
     header {
         display: flex;
+        height: 80px;
         background-color: var(--header-background-color);
     }
 
-    .navigation {
+    .navigation, .nav-list {
         flex-direction: column;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-toggle-show {
+        display: flex;
+    }
+
+    .nav-item-toggle {
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+        margin: 20px 20px;
+        width: 40px;
+        height: 40px;
     }
 
 }
@@ -50,12 +76,14 @@ body {
 @media screen and (min-width: 768px) {
 
     header {
-        display: grid;
         height: 65px;
-        grid-template-columns: auto 50px;
     }
 
-    .navigation ul {
+    .nav-button {
+        display: none;
+    }
+
+    .nav-list {
         display: flex;
         justify-content: left;
         align-content: center;
