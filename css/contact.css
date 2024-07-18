@@ -141,6 +141,32 @@ textarea {
 /*MOBILE CONFIGURATION*/
 @media screen and (max-width: 768px) {
     .contato {
-        height: auto;
+        height: auto; /* Ajusta a altura baseada no conteúdo */
+        padding: 20px; /* Adiciona padding para evitar que o conteúdo toque as bordas */
+        font-size: 16px; /* Ajusta o tamanho da fonte para melhor legibilidade */
     }
+
+    .input-group {
+        display: flex;
+        flex-direction: column; /* Alinhar os elementos em coluna */
+        align-items: flex-start; /* Alinhar à esquerda */
+        margin: 20px auto;
+        width: 100%; /* Ocupar toda a largura disponível */
+    }
+    
+    .input-label {
+        font-size: 16px; /* Reduzir o tamanho da fonte para melhor legibilidade */
+        color: var(--color-darkslategray-100);
+        margin-bottom: 5px; /* Espaçamento inferior para separação */
+        width: auto; /* Largura automática para ajustar ao conteúdo */
+        text-align: left; /* Alinhar à esquerda */
+    }
+    
+    .button-send {
+        position: static; /* Altera para posição estática para que o botão não seja absoluto */
+        padding: 12px 24px; /* Aumenta o padding para facilitar a interação */
+        font-size: 16px; /* Ajusta o tamanho da fonte para consistência */
+        border-radius: var(--br-small); /* Ajusta o border-radius para um visual mais suave */
+    }
+
 }
