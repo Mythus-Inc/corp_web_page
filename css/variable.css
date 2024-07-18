@@ -1,5 +1,6 @@
 :root {
-    --background-color: #ededed;
+    --header-background-color: #68ADD6;
+    --body-background-color: #ededed;
     --writing: #373737;
     --writing-shadow: #373737;
 }

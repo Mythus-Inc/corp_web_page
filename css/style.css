@@ -1,25 +1,35 @@
 @import url(variable.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 
 *,
 *::before,
 *::after {
     margin: 0px;
     padding: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--body-background-color);
+}
+
+.navigation {
+    display: flex;
+    width: 100%;
 }
 
 .navigation a {
-    color: var(--writing);
+    color: var(--text);
     text-decoration: none;
     align-content: center;
 }
 
 .navigation a:hover {
     font-size: larger;
-    text-shadow: 0px 0px 10px 0px var(--writing-shadow);
+    text-shadow: 0px 0px 10px 0px var(--text-shadow);
 
 }
 
@@ -27,35 +37,41 @@ body {
 @media screen and (max-width: 768px) {
     header {
         display: flex;
+        background-color: var(--header-background-color);
     }
 
-    .navigation{
-        display: flex;
+    .navigation {
         flex-direction: column;
-        width: 50px;
     }
 
 }
 
 /*WEB CONFIGURATION*/
 @media screen and (min-width: 768px) {
-    
-        header {
-            display: grid;
-            height: 50px;
-            grid-template-columns: auto 50px;
-        }
-    
-        .navigation ul {
-            display: flex;
-            justify-content: left;
-            align-content: center;
-            list-style-type: none;
-            margin-left: 80px;
-        }
-    
-        .navigation li {
-            padding: 20px 20px;
-            width: 80px;
-        }
+
+    header {
+        display: grid;
+        height: 65px;
+        grid-template-columns: auto 50px;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: left;
+        align-content: center;
+        list-style-type: none;
+        margin-left: 80px;
+    }
+
+    .navigation li {
+        font-size: 16px;
+        padding: 20px 20px;
+        width: 80px;
+    }
+
+    .blue-line {
+        border-color: var(--header-background-color);
+        width: 70%;
+        margin-left: 70px;
+    }
 }
