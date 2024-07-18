@@ -159,7 +159,7 @@ body {
 
 
 /*MOBILE CONFIGURATION*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
     .container-nav {
         flex-direction: column;
         align-items: center;
@@ -229,6 +229,7 @@ body {
 
     .card-equipe-container-description p {
         padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .card-equipe-container div:hover {  
