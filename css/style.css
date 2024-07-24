@@ -69,6 +69,13 @@ body {
         height: 40px;
     }
 
+    .nav-item{
+        height: 40px;
+    }
+
+    .nav-item a{
+        padding-left: 10px;
+    }
 }
 
 /*WEB CONFIGURATION*/
