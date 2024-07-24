@@ -67,7 +67,6 @@ a:hover {
     position: absolute;
     left: 0;
     margin-top: 57%;
-    
   }
 
 
@@ -84,7 +83,22 @@ a:hover {
         padding-bottom: 8%;
         vertical-align: middle;
         overflow: visible;
-    
+      }
+      .apresentacao{
+        margin: 2% 10%;
+      }
+
+      .saiba-mais{
+        background-color: #3592CA;
+        border: none;
+        border-radius: 35%;
+        position: fixed;
+        margin-top: none;
+        margin-left: 60%;
+      }
+      .wallet-logo{
+        height: 5%;
+        width: 5%;
       }
 }
 
