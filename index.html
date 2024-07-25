@@ -13,27 +13,15 @@
 
 <body>
     <header>
-        <div class="container-nav">
-            <nav class="container-nav">
-                <ul class="container-nav">
-                    <li class="nav-item"><a>Inicio</a></li>    
-                    <li class="nav-item"><a>Equipe</a></li>  
-                    <li class="nav-item"><a>Contato</a></li>  
-                    <li class="nav-item"><a>Produtos</a></li>                                     
-                </ul>
-            </div>
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="images/mobile-menu.png" alt=""></button>                            
-            </div>
+        <nav class="navigation">
+            <img class="nav-item nav-item-toggle" src="images/menu.png" alt="Icone Menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#product">Produtos</a></li>
+                <li class="nav-item"><a href="#contact">Contatos</a></li>
+                <li class="nav-item"><a href="#team">Equipe</a></li>
+            </ul>
         </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a>Inicio</a></li>    
-                <li class="nav-item"><a>Equipe</a></li>  
-                <li class="nav-item"><a>Contato</a></li>  
-                <li class="nav-item"><a>Produtos</a></li> 
-            </ul>            
-        </div>
     </header>
     <main>
         <section id="Equipe">
@@ -123,7 +111,23 @@
         
     </main>
     <footer>
-
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img class="footer-pic" src="images/footer-pic.png">
+                <h1>MYTHUS</h1>
+                <p>"Empoderando o aprendizado com Mythos: Tecnologia que inspira, educação que transforma!"</p>
+            </div>
+            <div class="footer-empresa">
+                <h1>Empresa</h1>
+                <h2>Equipe</h2>
+                <h2>Contato</h2>
+            </div>
+            <div class="footer-produtos">
+                <h1>Produtos</h1>
+                <h2>Notify</h2>
+                <h2>Wallet</h2>
+            </div>
+        </div>
     </footer>
     <script src="js/index.js"></script>
 </body>

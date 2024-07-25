@@ -14,39 +14,39 @@ body {
     background-color: var(--body-background);
 }
 
-.container-nav {
+/* NAV BAR - CAUÊ ESTÁ FAZENDO */
+
+header {
+    position: relative;
+    z-index: 1;
+}
+
+.navigation {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
-    padding-left: 5px;
-    font-weight: 140%;
+    width: 100%;
 }
 
-.container-nav ul {
-    height: auto;
+.nav-list {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 85%;
-    padding-left: 10px;
+}
+
+.navigation a {
+    color: var(--text);
+    text-decoration: none;
+    align-content: center;
+}
+
+.navigation a:hover {
+    font-size: larger;
+    text-shadow: 0px 0px 10px 0px var(--text-shadow);
 
 }
 
-.container-nav li {
-    cursor: pointer;
+.nav-item-toggle {
+    display: none;
 }
 
-.container-nav a {
-    font-size: large;
-
-}
-
-.container-nav ul li {
-    list-style: none;
-    margin: 0 1rem;
-}
+/* NAV BAR - CAUÊ ESTÁ FAZENDO */
 
 .card-equipe h1 {
     font-size: medium;
@@ -73,7 +73,7 @@ body {
     grid-row-gap: 15px;
     margin: 0 auto;
     margin-top: 50px;
-    
+
 }
 
 .card-equipe img {
@@ -87,21 +87,23 @@ body {
 
 .card-equipe-container {
     display: flex;
-    flex-direction: row; 
-    padding-bottom: 10px;  
+    flex-direction: row;
+    padding-bottom: 10px;
     align-items: center;
     margin: 0 auto;
 }
 
 .card-equipe-container-description {
-    background-color: #D1D1D1; 
+    background-color: #D1D1D1;
     width: 557px;
     height: 85px;
     border-radius: 20px;
     align-items: center;
 }
 
-.card-equipe-container-description h1, p, a {
+.card-equipe-container-description h1,
+p,
+a {
     justify-content: left;
     align-items: center;
     margin-top: 5px;
@@ -122,39 +124,104 @@ body {
 
 .container-nav li:hover {
     color: var(--hover-color);
-  }
+}
 
 .card-equipe-container-description a:hover {
     color: var(--hover-color);
-  }
+}
 
-  .card-equipe img:hover {
+.card-equipe img:hover {
     box-shadow: 0px 0px 10px 0px #000000;
     scale: 1.1;
     transition: 0.5s;
-  }
+}
 
-  .card-equipe-container div:hover{
+.card-equipe-container div:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     scale: 1.05;
     transition: 0.5s;
-  }
+}
+
+/*FOOTER*/
+
+.footer-container {
+    background-color: #68ADD6;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto;
+    height: auto;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    max-width: 200px;
+    padding-bottom: 25px;
+
+}
+
+.footer-logo img {
+    max-width: 170px;
+    max-height: 177px;
+
+}
+
+.footer-logo h1 {
+    margin-top: -30px;
+    padding-left: 15px;
+    color: #EDEDED;
+}
+
+.footer-logo p {
+    width: 334px;
+    text-align: justify;
+    font-size: small;
+    padding-left: 15px;
+    color: #EDEDED;
+}
+
+.footer-empresa {
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+}
+
+.footer-empresa h1 {
+    color: #EDEDED;
+    font-size: 20px;
+}
+
+.footer-empresa h2 {
+    color: #EDEDED;
+    font-size: 15px;
+    padding-top: 10px;
+
+}
+
+.footer-produtos {
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+    width: auto;
+}
+
+.footer-produtos h1 {
+    color: #EDEDED;
+    font-size: 20px;
+}
+
+.footer-produtos h2 {
+    color: #EDEDED;
+    font-size: 15px;
+    padding-top: 10px;
+
+}
 
 
 
-/* NAV BAR - CAUÊ ESTÁ FAZENDO */
 
-  .mobile-menu-icon {
-    display: none;
-  }
-
-  .mobile-menu {
-    display: none;
-  }
-
-/* NAV BAR - CAUÊ ESTÁ FAZENDO */
-
-
+/*FOOTER*/
 
 
 
@@ -165,12 +232,14 @@ body {
         align-items: center;
         padding-top: 20px;
     }
+
     .container-nav ul {
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
         padding-left: 0;
     }
+
     .container-nav ul li {
         margin: 0.5rem 0;
     }
@@ -211,7 +280,9 @@ body {
     }
 
 
-    .card-equipe-container-description h1, p, a {
+    .card-equipe-container-description h1,
+    p,
+    a {
         justify-content: left;
         padding-left: 15px;
         padding-right: 15px;
@@ -232,45 +303,111 @@ body {
         padding-bottom: 10px;
     }
 
-    .card-equipe-container div:hover {  
+    .card-equipe-container div:hover {
         box-shadow: none;
         scale: 1;
         transition: none;
     }
 
+/* NAV BAR  */
 
-    
+    header {
+        display: flex;
+        height: 80px;
+        background-color: var(--header-background-color);
+    }
 
+    .navigation,
+    .nav-list {
+        flex-direction: column;
+    }
 
-/* NAV BAR - CAUÊ ESTÁ FAZENDO */
+    .nav-list {
+        display: none;
+        background-color: var(--list-background-color);
+    }
 
-    .nav-item {
+    .nav-list li {
+        height: 40px;
+        border-bottom: 2px solid #4e4e4e;
+        align-content: center;
+    }
+
+    .nav-toggle-show {
+        display: flex;
+    }
+
+    .nav-item-toggle {
+        display: flex;
+        margin: 20px 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-item a {
+        padding-left: 10px;
+    }
+
+/* FOOTER */
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        padding-bottom: 25px;
+    }
+
+    .footer-logo {
+        margin: 0 auto;
+        padding-bottom: 5px;
+        align-items: center;
+    }
+
+    .footer-logo p{
         display: none;
     }
-    .mobile-menu-icon {
-        display: block;
-        
-    }
-    .mobile-menu-icon img{
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
+
+    .footer-empresa {
+        padding-left: 10px;
+        padding-top: 5px;
     }
 
-    .mobile-menu ul{
+    .footer-produtos {
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        height: 65px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .nav-list {
         display: flex;
-        flex-direction: column;
-        text-align: left;
-        padding-bottom: 1rem;
+        justify-content: left;
+        align-content: center;
+        list-style-type: none;
+        margin-left: 80px;
     }
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
+
+    .navigation li {
+        font-size: 16px;
+        padding: 20px 20px;
+        width: 80px;
     }
-    .open{
-        display: block;
+
+    .blue-line {
+        border-color: var(--header-background-color);
+        width: 70%;
+        margin-left: 70px;
     }
+}
 
 /* NAV BAR - CAUÊ ESTÁ FAZENDO */
-    
-}
+
