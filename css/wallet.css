@@ -8,8 +8,8 @@
     box-sizing: border-box;
 }
 
-#body h1 {
-
+*{
+    font-family: "Inter", sans-serif;
 }
   
 
@@ -140,6 +140,9 @@ body{
 
 /*Web*/
 @media only screen and (min-width: 600px) {
+    h2 {
+
+    }
     header {
         height: 65px;
     }
@@ -209,19 +212,23 @@ body{
     /*Seção sobre*/
     
     .txt-sobre{
+        overflow: hidden;
         height: 100%;
         width: 100%;
         padding-top: 10%;
-    }   
-    .txt-sobre h2{
-        font-family: "Inter" sans-serif;
-        font-style: bold;
-        font-variation-settings:"slnt" 0;
     }
-    .txt-sobre p, h2,h3{
-        text-align: justify;
-        font-size: 1em; 
+
+    .txt-sobre h1{
+      font-size: 350%;
+      font-weight: 900;
+    }
+    .txt-sobre h3{
+        font-weight: 500;
+    }
+
+    .txt-sobre p, h1,h3{
         line-height: 1.5em;
+        text-align: justify;
         margin-right: 30%;
     }
     .flex{
@@ -231,7 +238,12 @@ body{
         width: 100%;
     
     }
-    
+    .cruz-img{
+        right: 50%;
+        position: absolute;
+        top: 125%;
+        left:39.5%;
+    }
     .celular-img{
         padding-top: 5%;
         padding-left: 10%;
