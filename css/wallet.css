@@ -193,6 +193,7 @@ body{
     .container-mobile{
         display: none;
     }
+
     hr{
         display: none;
     }
@@ -200,6 +201,28 @@ body{
         float: right;
         height: 700px;
     }
+
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        height: 680px;
+        width: 100%;
+    
+    }
+    
+    .celular-img{
+        background: linear-gradient(to right, #68ADD6 60%, #EDEDED 0%);
+        height: 100%;
+        width: 100%;
+    }
+    
+    
+    .celular-img img{
+        height: 680px;
+        border: transparent thin solid;
+        padding: 5px;
+    }
+
 }
 
 /*color:#EDEDED;*/
