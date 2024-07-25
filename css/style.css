@@ -11,52 +11,34 @@
 #body {
     background-color: #EDEDED;
 }
+header{
+    position: relative;
+    z-index: 1;
+}
 
-.navbar {
-    padding: 10px 30px;
+.navigation {
     display: flex;
-    align-items: center;
-    background: #EDEDED;
-    height: 80px;
     width: 100%;
 }
 
-.logo {
-    color: black;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
+.nav-list {
+    display: flex;
 }
 
-.navbar-nav {
-    float: right;
-    margin-right: 20px;
+.navigation a {
+    color: var(--text);
+    text-decoration: none;
+    align-content: center;
 }
 
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+.navigation a:hover {
+    font-size: larger;
+    text-shadow: 0px 0px 10px 0px var(--text-shadow);
+
 }
 
-.a {
-    color: black;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-
-a.nav-link,
-a:hover {
-    background: #3592CA;
-    transition: .5s;
-}
-
-.menu-icon {
-    color: black;
-    font-size: 30px;
+.nav-item-toggle {
+    display: none;
 }
 .wallet-img{
     width: 100%;
@@ -69,15 +51,49 @@ a:hover {
     margin-top: 57%;
   }
 
-
+body{
+    background-color: #EDEDED;
+}
 
 /*MOBILE CONFIGURATION*/
 @media only screen and (max-width: 600px) {
-    label.logo {
-        font-size: 30px;
-        padding-left: 50px;
+    header {
+        display: flex;
+        height: 80px;
+        background-color: var(--header-background-color);
     }
-    .container {
+
+    .navigation, .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        display: none;
+        background-color: var(--list-background-color);
+    }
+    
+    .nav-list li {
+        height: 40px;
+        border-bottom: 2px solid #4e4e4e;
+        align-content: center;
+    }
+
+    .nav-toggle-show {
+        display: flex;
+    }
+
+    .nav-item-toggle {
+        display: flex;
+        margin: 20px 20px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .nav-item a {
+        padding-left: 10px;
+    }
+
+    .container-mobile{
         display: inline-block;
         width: 100%;
         padding-bottom: 8%;
@@ -88,24 +104,101 @@ a:hover {
         margin: 2% 10%;
       }
 
-      .saiba-mais{
-        background-color: #3592CA;
-        border: none;
-        border-radius: 35%;
-        position: fixed;
-        margin-top: none;
-        margin-left: 60%;
+      .saiba-mais {
+        background-color: #4CAF50; /* Green background */
+        color: #fff; /* White text */
+        padding: 10px 20px; /* Padding for better readability */
+        border: none; /* Remove default border */
+        border-radius: 10px; /* Rounded edges */
+        cursor: pointer; /* Pointer cursor on hover */
+        position: absolute; /* Position the button absolutely */
+        top: 86%; /* Move the button 50% from the top */
+        transform: translateY(-30%); /* Move the button up by 50% of its height */
+        right: 20px;
+        height: 5%;
+        justify-content: center;
+      }
+      
+      .saiba-mais:hover {
+        background-color: #3e8e41; /* Darker green on hover */
       }
       .wallet-logo{
-        height: 5%;
-        width: 5%;
+        height: 50%;
+        width: 40%;
+        margin-top: none;
+        margin-left: 30%;
+      }
+      hr{
+        border: #3592CA;
       }
 }
 
 /*Web*/
 @media only screen and (min-width: 600px) {
-    .container{
+    header {
+        height: 65px;
+    }
+
+    .nav-button {
         display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: left;
+        align-content: center;
+        list-style-type: none;
+        margin-left: 80px;
+    }
+
+    .navigation li {
+        font-size: 16px;
+        padding: 20px 20px;
+        width: 80px;
+    }
+
+    .blue-line {
+        border-color: var(--header-background-color);
+        width: 70%;
+        margin-left: 70px;
+    }
+    .apresentacao{
+        margin: 2% 10%;
+      }
+
+      .saiba-mais {
+        background-color: #4CAF50; /* Green background */
+        color: #fff; /* White text */
+        padding: 10px 20px; /* Padding for better readability */
+        border: none; /* Remove default border */
+        border-radius: 10px; /* Rounded edges */
+        cursor: pointer; /* Pointer cursor on hover */
+        position: absolute; /* Position the button absolutely */
+        top: 86%; /* Move the button 50% from the top */
+        transform: translateY(-30%); /* Move the button up by 50% of its height */
+        right: 20px;
+        height: 5%;
+        justify-content: center;
+      }
+      
+      .saiba-mais:hover {
+        background-color: #3e8e41; /* Darker green on hover */
+      }
+      .wallet-logo{
+        height: 20%;
+        width: 20%;
+        margin-top: none;
+        margin-left: 30%;
+      }
+    .container-mobile{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    .img-web{
+        float: right;
+        height: 700px;
     }
 }
 
