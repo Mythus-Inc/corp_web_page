@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+#body h1 {
+
+}
+  
+
 #body {
     background-color: #EDEDED;
 }
@@ -201,7 +206,24 @@ body{
         float: right;
         height: 700px;
     }
-
+    /*Seção sobre*/
+    
+    .txt-sobre{
+        height: 100%;
+        width: 100%;
+        padding-top: 10%;
+    }   
+    .txt-sobre h2{
+        font-family: "Inter" sans-serif;
+        font-style: bold;
+        font-variation-settings:"slnt" 0;
+    }
+    .txt-sobre p, h2,h3{
+        text-align: justify;
+        font-size: 1em; 
+        line-height: 1.5em;
+        margin-right: 30%;
+    }
     .flex{
         display: flex;
         justify-content: space-between;
@@ -211,16 +233,16 @@ body{
     }
     
     .celular-img{
+        padding-top: 5%;
+        padding-left: 10%;
         background: linear-gradient(to right, #68ADD6 60%, #EDEDED 0%);
         height: 100%;
-        width: 100%;
     }
     
     
     .celular-img img{
-        height: 680px;
+        max-height: 600px;
         border: transparent thin solid;
-        padding: 5px;
     }
 
 }
