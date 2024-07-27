@@ -186,7 +186,7 @@ main {
 /*WEB CONFIGURATION*/
 @media screen and (min-width: 768px) {
 
-    body {
+    .body-container {
         margin: 0 auto;
         max-width: 1200px;
     }
@@ -220,9 +220,7 @@ main {
     }
     
     footer  {
-        position: fixed;
-        left: 0;
-        bottom: 0;
+        position: relative;
         width: 100%;
     }
 }
