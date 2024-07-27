@@ -62,6 +62,12 @@ body{
 
 /*MOBILE CONFIGURATION*/
 @media only screen and (max-width: 600px) {
+    *,
+    *::before,
+    *::after {
+        box-sizing: none;
+    }
+
     header {
         display: flex;
         height: 80px;
@@ -135,14 +141,48 @@ body{
       }
       hr{
         border: #3592CA;
-      }
+    }
+    
+    /*seção sobre*/
+    #sobre-produto{
+        padding-top: 10%;
+    }
+    .celular-img{
+        display: none;
+    }
+    .txt-sobre {
+        
+        justify-content:center;
+        align-items: center;    
+        padding: 5%;
+    }
+    .txt-sobre p{
+        padding-top: 10%;
+        text-align: justify;
+    }
+    .txt-sobre h1{
+        font-size: 250%;
+        font-weight: 900;
+        text-align: center;
+    }
+    .txt-sobre h3{
+        padding-left: 26%;
+        font-weight: 500;
+    }
+
+    .cruz-img{
+        right: 10%;
+        position: absolute;
+        top: 242.5%;
+        left: 20%;
+    }
+    
+ 
 }
 
 /*Web*/
 @media only screen and (min-width: 600px) {
-    h2 {
 
-    }
     header {
         height: 65px;
     }
@@ -212,7 +252,6 @@ body{
     /*Seção sobre*/
     
     .txt-sobre{
-        overflow: hidden;
         height: 100%;
         width: 100%;
         padding-top: 10%;
