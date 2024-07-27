@@ -34,6 +34,7 @@ header {
     color: var(--text);
     text-decoration: none;
     align-content: center;
+    
 }
 
 .navigation a:hover {
@@ -244,7 +245,7 @@ a {
 
     .card-equipe img {
         margin: 0 auto;
-        z-index: 10;
+        z-index: 3;
     }
 
     .card-equipe-container {
@@ -267,7 +268,7 @@ a {
         margin-left: 5px;
         margin-right: 5px;
         text-align: justify;
-        z-index: 5;
+        z-index: 2;
     }
 
 
@@ -305,22 +306,27 @@ a {
     header {
         display: flex;
         height: 80px;
-        background-color: var(--blue-background-color);
+        background-color: var(--blue-background-color);        
+        z-index: 999;
     }
 
     .navigation,
     .nav-list {
         flex-direction: column;
+        
     }
 
     .nav-list {
         display: none;
         background-color: var(--nav-list-background-color);
+        
+        
     }
 
     .nav-list li {
         height: 40px;
         align-content: center;
+        
     }
 
     .nav-list li:not(:last-child) {
@@ -336,10 +342,12 @@ a {
         margin: 20px 20px;
         width: 40px;
         height: 40px;
+        
     }
 
     .nav-item a {
-        padding-left: 10px;
+        padding-left: 10px;  
+        
     }
 
 
@@ -412,29 +420,38 @@ a {
 
 @media screen and (min-width: 768px) and (max-width: 1500px) {
     .card-equipe {
-        grid-template-columns: 2fr;
-        grid-column-gap: 0;
-        grid-row-gap: 20px;
-    }
-
-    .card-equipe img {
-        margin: 0 auto;
-        z-index: 10;
+        grid-template-columns: repeat(2, 1fr); /* Define duas colunas iguais */
+        grid-column-gap: 20px; /* Espaçamento entre as colunas */
+        grid-row-gap: 20px; /* Espaçamento entre as linhas */
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .card-equipe-container {
+        display: flex;
+        flex-direction: row;
         align-items: center;
+        padding-right: 5px; 
+        padding-left: 5px;
+        box-sizing: border-box; /* Inclui padding e bordas na largura total */
+        width: 100%; /* Faz com que o container use toda a largura disponível */
     }
 
     .card-equipe-container img {
-        margin-right: 30px;
-        position: relative;
+        width: 100px; /* Ajusta o tamanho máximo da imagem */
+        height: auto; /* Mantém a proporção da imagem */
+        margin-right: 20px; /* Espaçamento entre a imagem e o texto */
     }
 
-
-
-
+    .card-equipe-container-description {
+        width: auto; /* Ajusta a largura para ser responsiva */
+        height: auto; /* Ajusta a altura para ser responsiva */
+    }
 }
+
+
+
+
 
 
 
