@@ -66,9 +66,8 @@ textarea {
 
 .message-input {
     position: relative;
-    width: 100%;
-    max-width: 1075px;
-    height: 511px;
+    width: 80%;
+    height: 47%;
     margin: 50px auto;
 }
 
