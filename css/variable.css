@@ -1,4 +1,25 @@
 :root {
+    /*--------Contacts--------*/
+    /* fonts */
+    --font-inter: 'Inter', sans-serif;
+    --font-mako: 'Mako', sans-serif;
+    
+    /* font sizes */
+    --font-size-8xl: 27px;
+    
+    /* colors */
+    --color-whitesmoke: #ededed;
+    --color-darkslategray-100: #373737;
+    --color-lightgray: #d1d1d1;
+    --color-button: #525252;
+    
+    /* border radiuses */
+    --br-3xs: 10px;
+    --br-small: 13px;
+    --br-large: 30px;
+    /*-----------------------------------------*/
+
+
     --transition-speed: 0.3s;
 
     --header-background-color: #68ADD6;
