@@ -48,87 +48,11 @@ header {
 
 main {
     padding: 20px 20px 0px 20px;
-}
-
-/*MOBILE CONFIGURATION*/
-@media screen and (max-width: 768px) {
-    header {
-        display: flex;
-        height: 80px;
-        background-color: var(--header-background-color);
-    }
-
-    .navigation,
-    .nav-list {
-        flex-direction: column;
-    }
-
-    .nav-list {
-        display: none;
-        background-color: var(--list-background-color);
-    }
-
-    .nav-list li {
-        height: 40px;
-        border-bottom: 2px solid #4e4e4e;
-        align-content: center;
-    }
-
-    .nav-toggle-show {
-        display: flex;
-    }
-
-    .nav-item-toggle {
-        display: flex;
-        margin: 20px 20px;
-        width: 40px;
-        height: 40px;
-    }
-
-    .nav-item a {
-        padding-left: 10px;
-    }
-
-}
-
-/*WEB CONFIGURATION*/
-@media screen and (min-width: 768px) {
-
-    header {
-        height: 65px;
-    }
-
-    .nav-button {
-        display: none;
-    }
-
-    .nav-list {
-        display: flex;
-        justify-content: left;
-        align-content: center;
-        list-style-type: none;
-        margin-left: 80px;
-    }
-
-    .navigation li {
-        font-size: 16px;
-        padding: 20px 20px;
-        width: 80px;
-    }
-
-    .blue-line {
-        border-color: var(--header-background-color);
-        width: 70%;
-        margin-left: 70px;
-    }
-}
-
-main {
     min-height: 100vh;
 }
 
 .footer-container {
-    background-color: #68ADD6;
+    background-color: var(--blue-background-color);
     display: grid;
     grid-gap: 20px;
     grid-template-columns: auto auto auto;
@@ -153,7 +77,7 @@ main {
 .footer-logo h1 {
     margin-top: -30px;
     padding-left: 15px;
-    color: #EDEDED;
+    color: var(--footer-content-color);
 }
 
 .footer-logo p {
@@ -161,7 +85,7 @@ main {
     text-align: justify;
     font-size: small;
     padding-left: 15px;
-    color: #EDEDED;
+    color: var(--footer-content-color);
 }
 
 .footer-empresa {
@@ -171,12 +95,12 @@ main {
 }
 
 .footer-empresa h1 {
-    color: #EDEDED;
+    color: var(--footer-content-color);
     font-size: 20px;
 }
 
 .footer-empresa h2 {
-    color: #EDEDED;
+    color: var(--footer-content-color);
     font-size: 15px;
     padding-top: 10px;
 
@@ -190,21 +114,61 @@ main {
 }
 
 .footer-produtos h1 {
-    color: #EDEDED;
+    color: var(--footer-content-color);
     font-size: 20px;
 }
 
 .footer-produtos h2 {
-    color: #EDEDED;
+    color: var(--footer-content-color);
     font-size: 15px;
     padding-top: 10px;
 
 }
 
-@media screen and (max-width: 1400px) {
-    .footer-container {
-        grid-template-columns: 1fr;
-        padding-bottom: 25px;
+/*MOBILE CONFIGURATION*/
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        height: 80px;
+        background-color: var(--blue-background-color);
+    }
+
+    .navigation,
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        display: none;
+        background-color: var(--nav-list-background-color);
+    }
+
+    .nav-list li {
+        height: 40px;
+        align-content: center;
+    }
+
+    .nav-list li:not(:last-child) {
+        border-bottom: 2px solid var(--nav-border-bottom);
+    }
+
+    .nav-toggle-show {
+        display: flex;
+    }
+
+    .nav-item-toggle {
+        display: flex;
+        margin: 20px 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-item a {
+        padding-left: 10px;
+    }
+
+    .footer-info {
+        padding: 40px 0 20px 0;
     }
 
     .footer-logo {
@@ -217,15 +181,50 @@ main {
         display: none;
     }
 
-    .footer-empresa {
-        padding-left: 10px;
-        padding-top: 5px;
+}
+
+/*WEB CONFIGURATION*/
+@media screen and (min-width: 768px) {
+
+    body {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    
+    header {
+        height: 65px;
     }
 
-    .footer-produtos {
-        padding-left: 10px;
-        padding-top: 5px;
+    .nav-button {
+        display: none;
     }
 
+    .nav-list {
+        display: flex;
+        justify-content: left;
+        align-content: center;
+        list-style-type: none;
+        margin-left: 80px;
+    }
 
+    .navigation li {
+        font-size: 16px;
+        padding: 20px 20px;
+        width: 80px;
+    }
+
+    .blue-line {
+        border-color: var(--blue-background-color);
+        width: 70%;
+        margin-left: 70px;
+    }
+    
+    footer  {
+        position: relative;
+        width: 100vw;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
 }
