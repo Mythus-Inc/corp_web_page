@@ -22,9 +22,11 @@
 
     --transition-speed: 0.3s;
 
-    --header-background-color: #68ADD6;
+    --blue-background-color: #68ADD6;
     --body-background-color: #ededed;
-    --list-background-color: #D1D1D1;
-    --writing: #373737;
-    --writing-shadow: #373737;
+    --nav-list-background-color: #D1D1D1;
+    --nav-border-bottom: #a1a1a1;
+    --text: #373737;
+    --text-shadow: #373737;
+    --footer-content-color: #EDEDED;
 }
