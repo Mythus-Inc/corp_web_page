@@ -48,14 +48,15 @@ textarea {
 
 .input-label {
     font-size: 22px;
-    color: var(--color-darkslategray-100);
+    color: var(--color-text-input);
     margin-right: 20px;
-    width: 80px; /* Largura fixa para alinhar */
-    text-align: right;
+    margin-left: -30px;
+    width: 100px; /* Largura fixa para alinhar */
+    text-align: justify;
 }
 
 .contact-input {
-    width: calc(100% - 90px); /* Ajuste a largura para acomodar o rótulo */
+    width: 100%; /* Ajuste a largura para acomodar o rótulo */
     font-size: 22px;
     padding: 10px;
     box-sizing: border-box;
