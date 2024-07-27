@@ -11,9 +11,6 @@
     font-style: normal;
 }
 
-body {
-    background-color: var(--color-whitesmoke);
-}
 
 textarea {
     width: 100%;
@@ -30,7 +27,6 @@ textarea {
 .contato {
     width: 100%;
     height: 1117px;
-    background-color: var(--color-whitesmoke);
     overflow: hidden;
     text-align: center;
     color: #656565;
