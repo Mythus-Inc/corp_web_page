@@ -1,5 +1,5 @@
 @import url(team-variable.css);
-
+@import url(variable.css);
 
 
 *,
@@ -31,14 +31,14 @@ header {
 }
 
 .navigation a {
-    color: var(--writing);
+    color: var(--text);
     text-decoration: none;
     align-content: center;
 }
 
 .navigation a:hover {
     font-size: larger;
-    text-shadow: 0px 0px 10px 0px var(--writing-shadow);
+    text-shadow: 0px 0px 10px 0px var(--text-shadow);
 
 }
 
@@ -64,6 +64,7 @@ header {
 
 
 .card-equipe {
+    
     display: grid;
     flex-direction: row;
     justify-content: center;
@@ -146,7 +147,7 @@ a {
 /*FOOTER*/
 
 .footer-container {
-    background-color: #68ADD6;
+    background-color: var(--blue-background-color);
     display: grid;
     grid-gap: 20px;
     grid-template-columns: auto auto auto;
@@ -171,7 +172,7 @@ a {
 .footer-logo h1 {
     margin-top: -30px;
     padding-left: 15px;
-    color: #EDEDED;
+    color: var(--footer-content-color);
 }
 
 .footer-logo p {
@@ -179,7 +180,7 @@ a {
     text-align: justify;
     font-size: small;
     padding-left: 15px;
-    color: #EDEDED;
+    color: var(--footer-content-color);
 }
 
 .footer-empresa {
@@ -189,12 +190,12 @@ a {
 }
 
 .footer-empresa h1 {
-    color: #EDEDED;
+    color: var(--footer-content-color);
     font-size: 20px;
 }
 
 .footer-empresa h2 {
-    color: #EDEDED;
+    color: var(--footer-content-color);
     font-size: 15px;
     padding-top: 10px;
 
@@ -208,12 +209,12 @@ a {
 }
 
 .footer-produtos h1 {
-    color: #EDEDED;
+    color: var(--footer-content-color);
     font-size: 20px;
 }
 
 .footer-produtos h2 {
-    color: #EDEDED;
+    color: var(--footer-content-color);
     font-size: 15px;
     padding-top: 10px;
 
@@ -226,21 +227,11 @@ a {
 
 
 
+
+
+
 /*MOBILE CONFIGURATION*/
-@media screen and (max-width: 1400px) {
-    .container-nav {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 20px;
-    }
-
-    .container-nav ul {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-        padding-left: 0;
-    }
-
+@media screen and (max-width: 768px) {
     .container-nav ul li {
         margin: 0.5rem 0;
     }
@@ -253,7 +244,6 @@ a {
 
     .card-equipe img {
         margin: 0 auto;
-        position: relative;
         z-index: 10;
     }
 
@@ -310,12 +300,12 @@ a {
         transition: none;
     }
 
-/* NAV BAR  */
+    /* NAV BAR  */
 
     header {
         display: flex;
         height: 80px;
-        background-color: var(--header-background-color);
+        background-color: var(--blue-background-color);
     }
 
     .navigation,
@@ -325,13 +315,16 @@ a {
 
     .nav-list {
         display: none;
-        background-color: var(--list-background-color);
+        background-color: var(--nav-list-background-color);
     }
 
     .nav-list li {
         height: 40px;
-        border-bottom: 2px solid #4e4e4e;
         align-content: center;
+    }
+
+    .nav-list li:not(:last-child) {
+        border-bottom: 2px solid var(--nav-border-bottom);
     }
 
     .nav-toggle-show {
@@ -349,11 +342,16 @@ a {
         padding-left: 10px;
     }
 
-/* FOOTER */
+
+    /* FOOTER */
 
     .footer-container {
         grid-template-columns: 1fr;
         padding-bottom: 25px;
+    }
+
+    .footer-info {
+        padding: 40px 0 20px 0;
     }
 
     .footer-logo {
@@ -362,25 +360,21 @@ a {
         align-items: center;
     }
 
-    .footer-logo p{
+    .footer-logo p {
         display: none;
-    }
-
-    .footer-empresa {
-        padding-left: 10px;
-        padding-top: 5px;
-    }
-
-    .footer-produtos {
-        padding-left: 10px;
-        padding-top: 5px;
     }
 
 
 }
 
+/*WEB CONFIGURATION*/
 @media screen and (min-width: 768px) {
 
+    .body-container {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    
     header {
         height: 65px;
     }
@@ -404,11 +398,43 @@ a {
     }
 
     .blue-line {
-        border-color: var(--header-background-color);
+        border-color: var(--blue-background-color);
         width: 70%;
         margin-left: 70px;
     }
+    
+    footer  {
+        position: relative;
+        width: 100%;
+    }
+
 }
 
-/* NAV BAR - CAUÊ ESTÁ FAZENDO */
+@media screen and (min-width: 768px) and (max-width: 1500px) {
+    .card-equipe {
+        grid-template-columns: 2fr;
+        grid-column-gap: 0;
+        grid-row-gap: 20px;
+    }
+
+    .card-equipe img {
+        margin: 0 auto;
+        z-index: 10;
+    }
+
+    .card-equipe-container {
+        align-items: center;
+    }
+
+    .card-equipe-container img {
+        margin-right: 30px;
+        position: relative;
+    }
+
+
+
+
+}
+
+
 
