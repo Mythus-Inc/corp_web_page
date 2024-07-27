@@ -5,59 +5,71 @@
     <title>Ente em Contato</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
     <header>
         <nav class="navigation">
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="#product">Produtos</a></li>
-                <li><a href="contact.html">Contatos</a></li>
-                <li><a href="#team">Equipe</a></li>
+            <img class="nav-item nav-item-toggle" src="images/menu.png" alt="Icone Menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Início</a></li>
+                <li class="nav-item"><a href="#product">Produtos</a></li>
+                <li class="nav-item"><a href="contact.html">Contatos</a></li>
+                <li class="nav-item"><a href="#team">Equipe</a></li>
             </ul>
         </nav>
     </header>
-    <div class="contato">
-        <main>
-            <section id="home"></section>
-            <section id="product"></section>
-            <section id="contact"></section>
-            <section id="team"></section>
-        </main>
+    <hr class="blue-line">
+    <main>
+        <div class="contato">
 
-        <div class="input-group"> <!-- Nome -->
-            <span class="input-label">Nome</span>
-            <input type="text" class="contact-input" placeholder="Seu Nome">
+            <div class="input-group"> <!-- Nome -->
+                <span class="input-label">Nome</span>
+                <input type="text" class="contact-input" placeholder="Seu Nome">
+            </div>
+
+            <div class="input-group"> <!-- Email -->
+                <span class="input-label">Email</span>
+                <input type="email" class="contact-input" placeholder="Seu Email">
+            </div>
+
+            <div class="input-group"> <!-- Telefone -->
+                <span class="input-label">Telefone</span>
+                <input type="text" class="contact-input" placeholder="(DDD)Seu-Numero">
+            </div>
+
+            <div class="input-group"> <!-- Assunto -->
+                <span class="input-label">Assunto</span>
+                <input type="text" class="contact-input" placeholder="Assunto">
+            </div>
+            <div class="message-input">
+                <textarea placeholder="Sua Mensagem"></textarea>
+            </div>
+            <button class="button-send">Send</button> <!-- Fazer o envio do email -->
         </div>
-
-        <div class="input-group"> <!-- Email -->
-            <span class="input-label">Email</span>
-            <input type="email" class="contact-input" placeholder="Seu Email">
-        </div>
-
-        <div class="input-group"> <!-- Telefone -->
-            <span class="input-label">Telefone</span>
-            <input type="text" class="contact-input" placeholder="(DDD)Seu-Numero">
-        </div>
-
-        <div class="input-group"> <!-- Assunto -->
-            <span class="input-label">Assunto</span>
-            <input type="text" class="contact-input" placeholder="Assunto">
-        </div>
-
-
-
-        <div class="message-input">
-            <textarea placeholder="Sua Mensagem"></textarea>
-        </div>
-        <button class="button-send">Send</button> <!-- Fazer o envio do email -->
-
-    </div>
+    </main>
     <footer>
-
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img class="footer-pic" src="images/footer-pic.png">
+                <h1>MYTHUS</h1>
+                <p>"Empoderando o aprendizado com Mythos: Tecnologia que inspira, educação que transforma!"</p>
+            </div>
+            <div class="footer-empresa">
+                <h1>Empresa</h1>
+                <h2>Equipe</h2>
+                <h2>Contato</h2>
+            </div>
+            <div class="footer-produtos">
+                <h1>Produtos</h1>
+                <h2>Notify</h2>
+                <h2>Wallet</h2>
+            </div>
+        </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
