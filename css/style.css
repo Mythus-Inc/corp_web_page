@@ -167,9 +167,8 @@ main {
         padding-left: 10px;
     }
 
-    .footer-container {
-        grid-template-columns: 1fr;
-        padding-bottom: 25px;
+    .footer-info {
+        padding: 40px 0 20px 0;
     }
 
     .footer-logo {
@@ -180,16 +179,6 @@ main {
 
     .footer-logo p {
         display: none;
-    }
-
-    .footer-empresa {
-        padding-left: 10px;
-        padding-top: 5px;
-    }
-
-    .footer-produtos {
-        padding-left: 10px;
-        padding-top: 5px;
     }
 
 }
@@ -228,5 +217,14 @@ main {
         border-color: var(--blue-background-color);
         width: 70%;
         margin-left: 70px;
+    }
+    
+    footer  {
+        position: relative;
+        width: 100vw;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
     }
 }
