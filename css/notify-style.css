@@ -87,7 +87,6 @@ h1, h2, p {
         justify-content: space-between;
         align-items: center;
         padding: 20px;
-        box-sizing: border-box;
     }
 
     .cont-2-blue-box {
