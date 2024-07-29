@@ -17,11 +17,7 @@
 #body {
     background-color: #EDEDED;
 }
-header{
-    position: relative;
-    z-index: 1;
-}
-
+/*
 .navigation {
     display: flex;
     width: 100%;
@@ -45,7 +41,7 @@ header{
 
 .nav-item-toggle {
     display: none;
-}
+}*/
 .wallet-img{
     width: 100%;
     padding-bottom: none;
@@ -63,13 +59,13 @@ body{
 
 /*MOBILE CONFIGURATION*/
 @media only screen and (max-width: 600px) {
-    *,
+     /* *,
     *::before,
     *::after {
         box-sizing: none;
     }
 
-    header {
+  header {
         display: flex;
         height: 80px;
         background-color: var(--header-background-color);
@@ -103,7 +99,7 @@ body{
     
     .nav-item a {
         padding-left: 10px;
-    }
+    }*/
 
     .container-mobile{
         display: inline-block;
@@ -182,7 +178,7 @@ body{
 /*Web*/
 @media only screen and (min-width: 600px) {
 
-    header {
+ /*   header {
         height: 65px;
     }
 
@@ -208,45 +204,55 @@ body{
         border-color: var(--header-background-color);
         width: 70%;
         margin-left: 70px;
+    }*/
+    .apresentacao {
+        padding-top: 30%;
+        display: flex;
     }
-    .apresentacao{
-        margin: 2% 10%;
-      }
+    .apresentacao h1{
+         font-size: 350%;
+         font-weight: 900;
+    }
+
+    .apresentacao p{
+        overflow: hidden;
+        position: relative;
+        top: 80px;
+        right: 260px;
+        font-size: 14px;
+        font-weight: 600;
+        
+   }
 
       .saiba-mais {
-        background-color: #4CAF50; /* Green background */
+        background-color: var(--blue-background-color);
         color: #fff; /* White text */
         padding: 10px 20px; /* Padding for better readability */
         border: none; /* Remove default border */
-        border-radius: 10px; /* Rounded edges */
+        border-radius: 30px; /* Rounded edges */
         cursor: pointer; /* Pointer cursor on hover */
         position: absolute; /* Position the button absolutely */
         top: 86%; /* Move the button 50% from the top */
-        transform: translateY(-30%); /* Move the button up by 50% of its height */
-        right: 20px;
-        height: 5%;
-        justify-content: center;
+        transform: translateY(-100%); /* Move the button up by 50% of its height */
+        margin-left: 150px;
+        
       }
       
-      .saiba-mais:hover {
-        background-color: #3e8e41; /* Darker green on hover */
-      }
+    .saiba-mais:hover {
+        background-color: var(--nav-border-bottom); /* Darker green on hover */
+    }
       .wallet-logo{
-        height: 20%;
-        width: 20%;
-        margin-top: none;
-        margin-left: 30%;
+        margin: 2%;
+        width: 60px;
+        height: 60px;
+        
       }
     .container-mobile{
         display: none;
     }
-
-    hr{
-        display: none;
-    }
     .img-web{
         float: right;
-        height: 700px;
+        height: 680px;
     }
     /*Seção sobre*/
     
@@ -278,7 +284,7 @@ body{
     }
     .cruz-img{
         right: 50%;
-        position: absolute;
+        position: static;
         top: 125%;
         left:39.5%;
     }
@@ -336,16 +342,16 @@ body{
     }
    
     .mes-ilimitado{
-        position: absolute;
+        position: static;
         right: 50%;
         top: 232%;
         left: 85%;
     }
     .mes{
-        position: absolute;
-        right: 50%;
-        top: 232%;
-        left: 53%;
+        position: relative;
+        top: 0px;
+        right: 300px;
+        left: 90px;
     }
 
     #check{
@@ -361,19 +367,37 @@ body{
     #button-experimentar{
         font-weight: 550;
         font-size: 19px;
+        background-color: var(--footer-content-color);
+        color:var(--text); /* White text */
+        padding: 5px 10px; /* Padding for better readability */
+        border-radius: 30px; /* Rounded edges */
+        border: solid var(--blue-background-color);
+        cursor: pointer; /* Pointer cursor on hover */
+        position: absolute;
+
     }
     #button-comprar{
         font-weight: 550;
         font-size: 19px;
+        background-color: var(--blue-background-color);
+        color: #fff; /* White text */
+        padding: 5px 10px; /* Padding for better readability */
+        border: solid var(--blue-background-color);
+        border-radius: 30px; /* Rounded edges */
+        cursor: pointer; /* Pointer cursor on hover */
+        position: absolute; 
     }
 
     #valor {
         font-size: 350%;
-        font-weight: 200;
+        font-weight: 100;
         color: var(--header-background-color);
         
     }
 
+    .alert{
+        font-weight: 10px;
+    }
     .gratuito{
         
         padding: 2%;
@@ -381,7 +405,7 @@ body{
         height: 500px;
         width: 300px;
         border-radius: 20px;
-        border: solid;
+        border: solid 2px;;
         border-color: var(--header-background-color);
     }
     .ilimitado{
@@ -391,8 +415,8 @@ body{
         height: 500px;
         width: 300px;
         border-radius: 20px;
-        border: solid;
-        border-color: var(--header-background-color);
+        border: solid 2px;
+        border-color: var(--blue-background-color);
     }
 
 
