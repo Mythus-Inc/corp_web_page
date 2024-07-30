@@ -101,6 +101,9 @@ body{
         padding-left: 10px;
     }*/
 
+    .container-web{
+        display: none;
+    }
     .container-mobile{
         display: inline-block;
         width: 100%;
@@ -152,6 +155,7 @@ body{
         justify-content:center;
         align-items: center;    
         padding: 5%;
+        margin-right: none;
     }
     .txt-sobre p{
         padding-top: 10%;
@@ -173,6 +177,65 @@ body{
         top: 242.5%;
         left: 20%;
     }
+
+    /*seção sobre valores*/
+
+    .txt-sobre-valores h1{  
+        text-align: center;
+        font-size: 250%;
+        font-weight: 900;   
+    }
+    .txt-sobre-valores h3{
+        font-weight: 400;
+    }
+
+    .container-valores{
+        gap: 10px;
+        display: flex;
+        justify-content:space-around;
+        justify-items: center;
+        width: 100%;
+    }
+    .container-valores h2{
+        font-weight: 800;
+    }
+    .container-valores h3{
+        font-weight: 550;
+    }
+    .container-valores h4{
+        font-weight: 800;
+    }
+    .container-valores h5{
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .container-valores{
+        flex-direction: column;
+    }
+
+    #alert{
+        height: 20px;
+        width: 20px;
+    }
+    #check{
+        height: 20px;
+        width: 20px;
+    }
+
+    .gratuito{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: solid 2px var(--blue-background-color);
+    } 
+
+    .ilimitado{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: solid 2px var(--blue-background-color);
+    } 
 }
 
 /*Web*/
@@ -273,7 +336,7 @@ body{
     .txt-sobre p, h1,h3{
         line-height: 1.5em;
         text-align: justify;
-        margin-right: 30%;
+        margin-right: 10px;
     }
     .flex{
         display: flex;
@@ -303,6 +366,7 @@ body{
     /*Seção Sobre Preços*/
 
     .container-valores{
+        gap: 10px;
         display: flex;
         justify-content:space-around;
         align-items: center;
@@ -340,9 +404,9 @@ body{
     .txt-sobre-valores h3{
         font-weight: 500;
     }
-   
+  /* 
     .mes-ilimitado{
-        position: static;
+        position: relative;
         right: 50%;
         top: 232%;
         left: 85%;
@@ -352,7 +416,7 @@ body{
         top: 0px;
         right: 300px;
         left: 90px;
-    }
+    }*/
 
     #check{
         max-width: 25px;
@@ -377,6 +441,8 @@ body{
 
     }
     #button-comprar{
+       
+        margin-top: 105px;
         font-weight: 550;
         font-size: 19px;
         background-color: var(--blue-background-color);
@@ -417,6 +483,10 @@ body{
         border-radius: 20px;
         border: solid 2px;
         border-color: var(--blue-background-color);
+    }
+
+    .ilimitado h2{
+        color: var(--blue-background-color);
     }
 
 
