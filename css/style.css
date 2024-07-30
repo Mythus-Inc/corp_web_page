@@ -190,7 +190,7 @@ main {
         margin: 0 auto;
         max-width: 1200px;
     }
-    
+
     header {
         height: 65px;
     }
@@ -218,8 +218,8 @@ main {
         width: 70%;
         margin-left: 70px;
     }
-    
-    footer  {
+
+    footer {
         position: relative;
         width: 100%;
     }
