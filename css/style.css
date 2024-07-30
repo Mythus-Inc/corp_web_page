@@ -44,6 +44,10 @@ header {
     font-size: larger;
 }
 
+.nav-item {
+    position: relative;
+}
+
 .nav-item.active > a {
     font-size: larger;
 }
@@ -56,10 +60,17 @@ header {
 .nav-sub-list {
     display: none;
     position: absolute;
-    top: 10px;
+    top: 103%;
+    width: 80px;
     flex-direction: column;
     list-style-type: none;
     background-color: var(--nav-list-background-color);
+}
+
+.nav-sub-item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 .nav-sub-item-toggle {
@@ -248,7 +259,7 @@ main {
         margin-left: 80px;
     }
 
-    .navigation li {
+    .nav-list > li {
         font-size: 16px;
         padding: 20px 20px;
         width: 80px;
