@@ -1,0 +1,129 @@
+@import url(variable.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+textarea {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-lightgray);
+    border-radius: var(--br-large);
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: var(--font-mako);
+    font-size: 22px;
+    border: none;
+}
+
+.contato {
+    width: 100%;
+    height: 1117px;
+    overflow: hidden;
+    text-align: center;
+    color: #656565;
+    font-size: var(--font-size-8xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    width: 70%;
+    height: 51px;
+}
+
+.input-label {
+    font-size: 22px;
+    color: var(--color-text-input);
+    margin-right: 20px;
+    margin-left: -30px;
+    width: 100px; /* Largura fixa para alinhar */
+    text-align: justify;
+}
+
+.contact-input {
+    width: 100%; /* Ajuste a largura para acomodar o rótulo */
+    font-size: 22px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: var(--br-small);
+    background-color: var(--color-lightgray);
+    border: none;
+}
+
+.message-input {
+    position: relative;
+    width: 80%;
+    height: 47%;
+    margin: 50px auto;
+}
+
+.button-send {
+    position: absolute; /* Posicionamento sticky */
+    bottom: 20px; /* Distância do botão até a borda inferior */
+    right: 150px; /* Distância do botão até a borda direita */
+    width: 142px;
+    height: 66px;
+    color: #ffffff;
+    background-color: var(--color-button);
+    border: none;
+    border-radius: var(--br-large);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.button-send:hover {
+    background-color: #929292;
+}
+
+/*MOBILE CONFIGURATION*/
+@media screen and (max-width: 768px) {
+    .contato {
+        height: auto; /* Ajusta a altura baseada no conteúdo */
+        padding: 20px; /* Adiciona padding para evitar que o conteúdo toque as bordas */
+        font-size: 16px; /* Ajusta o tamanho da fonte para melhor legibilidade */
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column; /* Alinhar os elementos em coluna */
+        align-items: center; /* Alinhar à esquerda */
+        width: 100%; /* Ocupar toda a largura disponível */
+    }
+    
+    .input-label {
+        font-size: 16px; /* Reduzir o tamanho da fonte para melhor legibilidade */
+        color: var(--color-darkslategray-100);
+        margin-bottom: 5px; /* Espaçamento inferior para separação */
+        width: auto; /* Largura automática para ajustar ao conteúdo */
+        text-align: left; /* Alinhar à esquerda */
+    }
+    
+    .button-send {
+        position: static; /* Altera para posição estática para que o botão não seja absoluto */
+        padding: 12px 24px; /* Aumenta o padding para facilitar a interação */
+        font-size: 16px; /* Ajusta o tamanho da fonte para consistência */
+        border-radius: var(--br-small); /* Ajusta o border-radius para um visual mais suave */
+    }
+
+    .message-input {
+        position: relative;
+        width: 90%;
+        height: 300px;
+        margin: 50px auto;
+    }
+}
