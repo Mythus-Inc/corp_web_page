@@ -141,7 +141,7 @@ h1, h2, p {
     #container-3 {
     
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         
         margin-top: 80px;
@@ -170,52 +170,79 @@ h1, h2, p {
         font-size: 60px;
         font-weight: 1000;
 
-        margin-bottom: 300px;
+        margin-bottom: 250px;
     }
 
     .cont-3-price-box {
  
         /* height: 65%; */
-        min-width: 25%;
+        min-width: 30%;
 
-        padding: 35px 0px;
+        padding: 30px 0px 35px 0px;
+        margin-right: 20px;
 
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
 
-        border-radius: 8px;
-        
+        border-radius: 15px;
         box-shadow: 10px 0px 15px #bebebe;
+
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .cont-3-price-box:hover{
+
+        box-shadow: 0 0 50px #68aed6c9;
+        transform: translateY(-5px);
     }
 
     #cont-3-free {
 
         border: solid 3.2px #373737;
+
+        margin-left: 18%;
     }
 
     #cont-3-premium {
 
-        background-color: #d6f0ff;
+        background-color: #f2faff;
         border: solid 4.4px #68ADD6;
     }
 
-    .cont-3-price-box h1 {
+    .cont-3-plan-title {
  
         font-size: 33px;
         font-weight: 1000;
     }
 
-    .cont-3-price{
+    .cont-3-plan-line{
+
+        width: 80%;
+        margin-top: 15px;
+    }
+
+    .cont-3-plan-info{
+
         width: 100%;
 
         display: flex;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: flex-start;
+    }
+
+    .cont-3-price {
+
+        width: 100%;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
         flex-direction: row;
 
-        margin-top: 20px;
+        margin-top: 38px;
+        margin-left: 38px;
     }
 
     .cont-3-price-rs {
@@ -226,7 +253,7 @@ h1, h2, p {
 
     .cont-3-price-number {
  
-        font-size: 25px;
+        font-size: 40px;
         font-weight: 500;
     }
 
@@ -235,8 +262,98 @@ h1, h2, p {
     .cont-3-price-month {
 
         margin-left: 4%;
+        padding-top: 20px;
 
         font-size: 22px;
         font-weight: 350;
+    }
+
+    .cont-3-advantage-list {
+
+        width: 100%;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        margin-top: 70px;
+        margin-left: 60px;
+    }
+
+    .cont-3-advantage {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont-3-advantage-text {
+
+        font-size: 17px;
+
+        margin-left: 5px;
+        margin-bottom: 5px;
+
+        padding-right: 40px;
+
+        word-wrap: break-word;
+        white-space: normal;
+    }
+
+    .cont-3-advantage-list .fi {
+
+        font-size: 22px;
+        color: #68ADD6;
+    }
+
+    .cont-3-advantage-list .fi-sr-cross-circle {
+
+        color: #373737;
+    }
+
+    .cont-3-plan-button {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+        width: auto;
+        padding: 6px 26px;
+
+        margin-top: 130px;
+    }
+
+    #cont-3-free .cont-3-plan-button {
+        
+        border-radius: 15px;
+        border: solid 2.2px #68ADD6;
+    }
+
+    #cont-3-free .cont-3-plan-button h1 {
+
+        color: #68ADD6;
+
+        font-size: 21px;
+        font-weight: 400;
+    }
+
+    #cont-3-premium .cont-3-plan-button {
+
+        background-color: #68ADD6;
+
+        border-radius: 15px;
+        border: solid 2.2px #68ADD6;
+    }
+
+    #cont-3-premium .cont-3-plan-button h1 {
+
+        color: #f2faff;
+
+        font-size: 21;
+        font-weight: 400;
     }
 }
