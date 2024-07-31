@@ -1,9 +1,257 @@
+@import url(variable.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 *,
 *::before,
 *::after {
     margin: 0px;
     padding: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--body-background-color);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+}
+
+.navigation {
+    display: flex;
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    position: relative;
+}
+
+.nav-list a {
+    display: flex;
+    height: 25px;
+    text-decoration: none;
+    align-content: center;
+    font-size: medium;
+    color: var(--text);
+}
+
+.nav-list a:hover {
+    font-size: larger;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item.active>a {
+    font-size: larger;
+}
+
+.nav-item-toggle {
+    display: none;
+}
+
+main {
+    padding: 20px 20px 0px 20px;
+    min-height: 80vh;
+}
+
+.footer-container {
+    background-color: var(--blue-background-color);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto;
+    height: auto;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    max-width: 200px;
+    padding-bottom: 25px;
+
+}
+
+.footer-logo img {
+    max-width: 170px;
+    max-height: 177px;
+
+}
+
+.footer-logo h1 {
+    margin-top: -30px;
+    padding-left: 15px;
+    color: var(--footer-content-color);
+}
+
+.footer-logo p {
+    width: 334px;
+    text-align: justify;
+    font-size: small;
+    padding-left: 15px;
+    color: var(--footer-content-color);
+}
+
+.footer-empresa {
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+}
+
+.footer-empresa h1 {
+    color: var(--footer-content-color);
+    font-size: 20px;
+}
+
+.footer-empresa h2 {
+    color: var(--footer-content-color);
+    font-size: 15px;
+    padding-top: 10px;
+
+}
+
+.footer-produtos {
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+    width: auto;
+}
+
+.footer-produtos h1 {
+    color: var(--footer-content-color);
+    font-size: 20px;
+}
+
+.footer-produtos h2 {
+    color: var(--footer-content-color);
+    font-size: 15px;
+    padding-top: 10px;
+
+}
+
+.reset-link {
+    font-family: "Poppins", sans-serif !important;
+    justify-content: initial;
+    align-items: initial;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: medium;
+    width: 20px;
+    box-sizing: border-box;
 }
 
 /*MOBILE CONFIGURATION*/
-@media screen and (width: 768px) {}
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        height: 80px;
+        background-color: var(--blue-background-color);
+        z-index: 10;
+    }
+
+    .navigation,
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        display: none;
+        position: static;
+        background-color: var(--nav-list-background-color);
+        z-index: 20;
+    }
+
+    .nav-list li {
+        height: 40px;
+        align-content: center;
+    }
+
+    .nav-list li:not(:last-child) {
+        border-bottom: 2px solid var(--nav-border-bottom);
+    }
+
+    .nav-item-toggle {
+        display: flex;
+        margin: 20px 20px;
+        width: 40px;
+        height: 40px;
+        z-index: 30;
+    }
+
+    .nav-item a {
+        padding-left: 10px;
+    }
+
+    .nav-toggle-show {
+        display: flex;
+    }
+
+    .footer-info {
+        padding: 40px 0 20px 0;
+    }
+
+    .footer-logo {
+        margin: 0 auto;
+        padding-bottom: 5px;
+        align-items: center;
+    }
+
+    .footer-logo p {
+        display: none;
+    }
+}
+
+/*WEB CONFIGURATION*/
+@media screen and (min-width: 768px) {
+
+    .body-container {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    header {
+        height: 65px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: left;
+        align-content: center;
+        list-style-type: none;
+        margin-left: 80px;
+    }
+
+    .nav-list>li {
+        font-size: 16px;
+        padding: 20px 20px;
+        width: 80px;
+    }
+
+    .blue-line {
+        border-color: var(--blue-background-color);
+        width: 70%;
+        margin-left: 70px;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+    }
+}
