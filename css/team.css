@@ -420,9 +420,9 @@ a {
 
 @media screen and (min-width: 768px) and (max-width: 1500px) {
     .card-equipe {
-        grid-template-columns: repeat(2, 1fr); /* Define duas colunas iguais */
-        grid-column-gap: 20px; /* Espaçamento entre as colunas */
-        grid-row-gap: 20px; /* Espaçamento entre as linhas */
+        grid-template-columns: repeat(2, 1fr); 
+        grid-column-gap: 20px; 
+        grid-row-gap: 20px; 
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -433,19 +433,19 @@ a {
         align-items: center;
         padding-right: 5px; 
         padding-left: 5px;
-        box-sizing: border-box; /* Inclui padding e bordas na largura total */
-        width: 100%; /* Faz com que o container use toda a largura disponível */
+        box-sizing: border-box; 
+        width: 100%;
     }
 
     .card-equipe-container img {
-        width: 100px; /* Ajusta o tamanho máximo da imagem */
-        height: auto; /* Mantém a proporção da imagem */
-        margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+        width: 100px; 
+        height: auto; 
+        margin-right: 20px; 
     }
 
     .card-equipe-container-description {
-        width: auto; /* Ajusta a largura para ser responsiva */
-        height: auto; /* Ajusta a altura para ser responsiva */
+        width: auto; 
+        height: auto; 
     }
 }
 
