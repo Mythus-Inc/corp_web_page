@@ -32,6 +32,20 @@ svg {
     margin-left: 25%;
 }
 
+.saiba-mais {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    background-color: #68ADD6;
+    color: white;
+    cursor: pointer;
+    transition: #3592CA 0.3s;
+}
+
+.saiba-mais:hover {
+    background-color: #3592CA;
+}
 
 /*MOBILE CONFIGURATION*/
 @media only screen and (max-width: 700px) {
@@ -68,13 +82,13 @@ svg {
         height: 100%;
         width: 100%;
         margin-top: 20px;
+        padding-bottom: 80px;
     }
 
     .apresentacao-container {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 20px;
     }
 
     .wallet-logo {
@@ -91,9 +105,17 @@ svg {
         margin-top: 20px;
     }
 
+    /*linha*/
+
+    .linha {
+        border: 0;
+        height: 1px;
+        background: #9F9F9F;
+    }
+
     /*seção sobre*/
     .flex {
-        margin-top: 90px;
+        padding-bottom: 80px;
     }
 
     #sobre-produto {
@@ -135,8 +157,8 @@ svg {
     }
 
     /*seção sobre valores*/
-    .container-valores {
-        margin-top: 90px;
+    #sobre-valores {
+        padding-top: 10%;
     }
 
     .txt-sobre-valores {
@@ -260,9 +282,46 @@ svg {
 
 /*Web*/
 @media only screen and (min-width: 700px) {
-    .apresentacao {
-        padding-top: 30%;
+    .linha {
+        display: none;
+    }
+
+    .container-mobile {
+        display: none;
+    }
+
+    .main-container {
         display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        /* Adjust the gap between the divs if needed */
+        padding: 20px;
+        /* Optional: Add padding for better spacing */
+    }
+
+    .container-web {
+        flex: 1;
+        /* Adjust flex value as needed */
+        display: flex;
+        justify-content: flex-end;
+        /* Aligns the image to the right */
+    }
+
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        /* Aligns the content to the left */
+        padding-top: 30%;
+    }
+
+    .apresentacao-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        /* Aligns the content to the left */
     }
 
     .apresentacao h1 {
@@ -271,13 +330,11 @@ svg {
     }
 
     .apresentacao p {
-        overflow: hidden;
-        position: relative;
-        top: 80px;
-        right: 260px;
         font-size: 14px;
         font-weight: 600;
-
+        margin-top: 20px;
+        text-align: left;
+        /* Ensures the text is left-aligned */
     }
 
     .saiba-mais {
@@ -292,14 +349,10 @@ svg {
         /* Rounded edges */
         cursor: pointer;
         /* Pointer cursor on hover */
-        position: absolute;
-        /* Position the button absolutely */
-        top: 86%;
-        /* Move the button 50% from the top */
-        transform: translateY(-100%);
-        /* Move the button up by 50% of its height */
-        margin-left: 150px;
-
+        margin-top: 20px;
+        /* Add margin on top */
+        transition: background-color 0.3s;
+        /* Add transition for background color */
     }
 
     .saiba-mais:hover {
@@ -311,16 +364,11 @@ svg {
         margin: 2%;
         width: 60px;
         height: 60px;
-
-    }
-
-    .container-mobile {
-        display: none;
     }
 
     .img-web {
-        float: right;
         height: 680px;
+        max-width: 100%;
     }
 
     /*Seção sobre*/
@@ -425,13 +473,15 @@ svg {
     .txt-sobre-valores h3 {
         font-weight: 500;
     }
-    .container-alinhamento{
+
+    .container-alinhamento {
         width: 100%;
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
     }
-    .mes{
+
+    .mes {
         color: var(--nav-border-bottom);
         position: relative;
         right: 300px;
