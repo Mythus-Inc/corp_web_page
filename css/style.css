@@ -150,6 +150,7 @@ main {
     padding-right: 0;
     font-size: medium;
     width: 20px;
+    box-sizing: border-box;
 }
 
 /*MOBILE CONFIGURATION*/

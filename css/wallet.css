@@ -7,7 +7,6 @@
     padding: 0px;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
 }
 
 * {
@@ -235,12 +234,13 @@ svg {
         padding-top: 30px;
         font-size: 20px;
         font-weight: 100;
-        
+
     }
 
-    .alert{
+    .alert {
         margin-top: 5px;
     }
+
     #alert {
         margin-right: 5px;
         height: 15px;
@@ -267,7 +267,7 @@ svg {
         border: solid 2px var(--blue-background-color);
     }
 
-    .button-experimentar button{
+    .button-experimentar button {
         margin-top: 15px;
         font-weight: 550;
         background-color: var(--footer-content-color);
@@ -281,16 +281,20 @@ svg {
         cursor: pointer;
         /* Pointer cursor on hover */
     }
-    .button-experimentar, .button-comprar{
+
+    .button-experimentar,
+    .button-comprar {
         display: flex;
         justify-content: center;
     }
 
-    .gratuito:hover, .ilimitado:hover{
+    .gratuito:hover,
+    .ilimitado:hover {
         box-shadow: 0 0 50px #33343462;
         transform: translateY(-5px);
     }
-    .button-comprar button{
+
+    .button-comprar button {
         margin-top: 15px;
         font-weight: 550;
         background-color: var(--blue-background-color);
@@ -430,7 +434,7 @@ svg {
         width: 100%;
 
     }
-    
+
     .cruz-img {
         height: 30px;
         width: 30px;
@@ -461,7 +465,7 @@ svg {
         height: 680px;
         width: 100%;
     }
-    
+
 
     .container-valores h2 {
         font-weight: 800;
@@ -515,7 +519,7 @@ svg {
         padding-top: 30px;
         font-size: 20px;
         font-weight: 100;
-        
+
     }
 
     #check {
@@ -530,7 +534,7 @@ svg {
         max-height: 15px;
     }
 
-    .button-experimentar button{
+    .button-experimentar button {
 
         margin-top: 90px;
         font-weight: 550;
@@ -543,12 +547,13 @@ svg {
         cursor: pointer;
     }
 
-    .button-experimentar, .button-comprar {
+    .button-experimentar,
+    .button-comprar {
         display: flex;
         justify-content: center;
     }
 
-    .button-comprar button{
+    .button-comprar button {
         margin-top: 45px;
         font-weight: 550;
         font-size: 19px;
@@ -571,7 +576,8 @@ svg {
         font-weight: 10px;
     }
 
-    .gratuito:hover, .ilimitado:hover{
+    .gratuito:hover,
+    .ilimitado:hover {
         box-shadow: 0 0 50px #33343462;
         transform: translateY(-5px);
     }
