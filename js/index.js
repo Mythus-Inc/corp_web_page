@@ -6,8 +6,9 @@ document.querySelector('.nav-item-toggle').addEventListener('click', function ()
 function classToggle(targetSelector, toggleClass) {
     const elements = document.querySelectorAll(targetSelector);
 
-    elements.forEach(element => element.classList.toggle(toggleClass));
+    navs.forEach(nav => nav.classList.toggle('nav-toggle-show'));
 }
+    elements.forEach(element => element.classList.toggle(toggleClass));
 
 document.querySelectorAll('.nav-item').forEach(item => {
     item.addEventListener('click', function () {
