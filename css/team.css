@@ -1,4 +1,3 @@
-@import url(team-variable.css);
 @import url(variable.css);
 
 
@@ -13,41 +12,6 @@
 body {
     background-color: var(--body-background);
 }
-
-/* NAV BAR - CAUÊ ESTÁ FAZENDO */
-
-header {
-    position: relative;
-    z-index: 1;
-}
-
-.navigation {
-    display: flex;
-    width: 100%;
-}
-
-.nav-list {
-    display: flex;
-}
-
-.navigation a {
-    color: var(--text);
-    text-decoration: none;
-    align-content: center;
-    
-}
-
-.navigation a:hover {
-    font-size: larger;
-    text-shadow: 0px 0px 10px 0px var(--text-shadow);
-
-}
-
-.nav-item-toggle {
-    display: none;
-}
-
-/* NAV BAR - CAUÊ ESTÁ FAZENDO */
 
 .card-equipe h1 {
     font-size: medium;
@@ -65,7 +29,7 @@ header {
 
 
 .card-equipe {
-    
+
     display: grid;
     flex-direction: row;
     justify-content: center;
@@ -145,91 +109,6 @@ a {
     transition: 0.5s;
 }
 
-/*FOOTER*/
-
-.footer-container {
-    background-color: var(--blue-background-color);
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: auto auto auto;
-    height: auto;
-}
-
-.footer-logo {
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px;
-    max-width: 200px;
-    padding-bottom: 25px;
-
-}
-
-.footer-logo img {
-    max-width: 170px;
-    max-height: 177px;
-
-}
-
-.footer-logo h1 {
-    margin-top: -30px;
-    padding-left: 15px;
-    color: var(--footer-content-color);
-}
-
-.footer-logo p {
-    width: 334px;
-    text-align: justify;
-    font-size: small;
-    padding-left: 15px;
-    color: var(--footer-content-color);
-}
-
-.footer-empresa {
-    display: flex;
-    flex-direction: column;
-    padding-top: 75px;
-}
-
-.footer-empresa h1 {
-    color: var(--footer-content-color);
-    font-size: 20px;
-}
-
-.footer-empresa h2 {
-    color: var(--footer-content-color);
-    font-size: 15px;
-    padding-top: 10px;
-
-}
-
-.footer-produtos {
-    display: flex;
-    flex-direction: column;
-    padding-top: 75px;
-    width: auto;
-}
-
-.footer-produtos h1 {
-    color: var(--footer-content-color);
-    font-size: 20px;
-}
-
-.footer-produtos h2 {
-    color: var(--footer-content-color);
-    font-size: 15px;
-    padding-top: 10px;
-
-}
-
-
-
-
-/*FOOTER*/
-
-
-
-
-
 
 /*MOBILE CONFIGURATION*/
 @media screen and (max-width: 768px) {
@@ -301,78 +180,6 @@ a {
         transition: none;
     }
 
-    /* NAV BAR  */
-
-    header {
-        display: flex;
-        height: 80px;
-        background-color: var(--blue-background-color);        
-        z-index: 999;
-    }
-
-    .navigation,
-    .nav-list {
-        flex-direction: column;
-        
-    }
-
-    .nav-list {
-        display: none;
-        background-color: var(--nav-list-background-color);
-        
-        
-    }
-
-    .nav-list li {
-        height: 40px;
-        align-content: center;
-        
-    }
-
-    .nav-list li:not(:last-child) {
-        border-bottom: 2px solid var(--nav-border-bottom);
-    }
-
-    .nav-toggle-show {
-        display: flex;
-    }
-
-    .nav-item-toggle {
-        display: flex;
-        margin: 20px 20px;
-        width: 40px;
-        height: 40px;
-        
-    }
-
-    .nav-item a {
-        padding-left: 10px;  
-        
-    }
-
-
-    /* FOOTER */
-
-    .footer-container {
-        grid-template-columns: 1fr;
-        padding-bottom: 25px;
-    }
-
-    .footer-info {
-        padding: 40px 0 20px 0;
-    }
-
-    .footer-logo {
-        margin: 0 auto;
-        padding-bottom: 5px;
-        align-items: center;
-    }
-
-    .footer-logo p {
-        display: none;
-    }
-
-
 }
 
 /*WEB CONFIGURATION*/
@@ -382,47 +189,14 @@ a {
         margin: 0 auto;
         max-width: 1200px;
     }
-    
-    header {
-        height: 65px;
-    }
-
-    .nav-button {
-        display: none;
-    }
-
-    .nav-list {
-        display: flex;
-        justify-content: left;
-        align-content: center;
-        list-style-type: none;
-        margin-left: 80px;
-    }
-
-    .navigation li {
-        font-size: 16px;
-        padding: 20px 20px;
-        width: 80px;
-    }
-
-    .blue-line {
-        border-color: var(--blue-background-color);
-        width: 70%;
-        margin-left: 70px;
-    }
-    
-    footer  {
-        position: relative;
-        width: 100%;
-    }
 
 }
 
 @media screen and (min-width: 768px) and (max-width: 1500px) {
     .card-equipe {
-        grid-template-columns: repeat(2, 1fr); 
-        grid-column-gap: 20px; 
-        grid-row-gap: 20px; 
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -431,27 +205,20 @@ a {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding-right: 5px; 
+        padding-right: 5px;
         padding-left: 5px;
-        box-sizing: border-box; 
+        box-sizing: border-box;
         width: 100%;
     }
 
     .card-equipe-container img {
-        width: 100px; 
-        height: auto; 
-        margin-right: 20px; 
+        width: 100px;
+        height: auto;
+        margin-right: 20px;
     }
 
     .card-equipe-container-description {
-        width: auto; 
-        height: auto; 
+        width: auto;
+        height: auto;
     }
 }
-
-
-
-
-
-
-

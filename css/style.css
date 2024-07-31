@@ -16,6 +16,10 @@ body {
     background-color: var(--body-background-color);
 }
 
+a {
+    text-decoration: none !important;
+}
+
 header {
     position: relative;
     z-index: 1;
@@ -58,7 +62,7 @@ header {
 
 main {
     padding: 20px 20px 0px 20px;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .footer-container {
@@ -135,12 +139,24 @@ main {
 
 }
 
+.reset-link {
+    justify-content: initial;
+    align-items: initial;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline;
+    padding-left: 0;
+    padding-right: 0;
+    width: 20px;
+}
+
 /*MOBILE CONFIGURATION*/
 @media screen and (max-width: 768px) {
     header {
         display: flex;
         height: 80px;
         background-color: var(--blue-background-color);
+        z-index: 10;
     }
 
     .navigation,
@@ -152,6 +168,7 @@ main {
         display: none;
         position: static;
         background-color: var(--nav-list-background-color);
+        z-index: 20;
     }
 
     .nav-list li {
@@ -168,6 +185,7 @@ main {
         margin: 20px 20px;
         width: 40px;
         height: 40px;
+        z-index: 30;
     }
 
     .nav-item a {

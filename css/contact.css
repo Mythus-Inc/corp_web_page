@@ -51,12 +51,12 @@ textarea {
     color: var(--color-text-input);
     margin-right: 20px;
     margin-left: -30px;
-    width: 100px; /* Largura fixa para alinhar */
+    width: 100px;
     text-align: justify;
 }
 
 .contact-input {
-    width: 100%; /* Ajuste a largura para acomodar o rótulo */
+    width: 100%;
     font-size: 22px;
     padding: 10px;
     box-sizing: border-box;
@@ -73,9 +73,9 @@ textarea {
 }
 
 .button-send {
-    position: absolute; /* Posicionamento sticky */
-    bottom: 20px; /* Distância do botão até a borda inferior */
-    right: 150px; /* Distância do botão até a borda direita */
+    position: absolute;
+    bottom: 20px;
+    right: 150px;
     width: 142px;
     height: 66px;
     color: #ffffff;
@@ -92,32 +92,45 @@ textarea {
 
 /*MOBILE CONFIGURATION*/
 @media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .contato {
-        height: auto; /* Ajusta a altura baseada no conteúdo */
-        padding: 20px; /* Adiciona padding para evitar que o conteúdo toque as bordas */
-        font-size: 16px; /* Ajusta o tamanho da fonte para melhor legibilidade */
+        height: auto;
+        padding: 20px;
+        font-size: 16px;
+        max-width: 100%;
     }
 
     .input-group {
         display: flex;
-        flex-direction: column; /* Alinhar os elementos em coluna */
-        align-items: center; /* Alinhar à esquerda */
-        width: 100%; /* Ocupar toda a largura disponível */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
     }
-    
+
     .input-label {
-        font-size: 16px; /* Reduzir o tamanho da fonte para melhor legibilidade */
-        color: var(--color-darkslategray-100);
-        margin-bottom: 5px; /* Espaçamento inferior para separação */
-        width: auto; /* Largura automática para ajustar ao conteúdo */
-        text-align: left; /* Alinhar à esquerda */
+        font-size: 16px;
+        color: var(--color-text-input);
+        margin-bottom: 5px;
+        width: auto;
+        text-align: left;
     }
-    
+
     .button-send {
-        position: static; /* Altera para posição estática para que o botão não seja absoluto */
-        padding: 12px 24px; /* Aumenta o padding para facilitar a interação */
-        font-size: 16px; /* Ajusta o tamanho da fonte para consistência */
-        border-radius: var(--br-small); /* Ajusta o border-radius para um visual mais suave */
+        position: static;
+        padding: 12px 24px;
+        font-size: 16px;
+        border-radius: var(--br-small);
     }
 
     .message-input {
@@ -125,5 +138,6 @@ textarea {
         width: 90%;
         height: 300px;
         margin: 50px auto;
+        max-width: 100%;
     }
 }
