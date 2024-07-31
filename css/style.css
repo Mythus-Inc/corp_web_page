@@ -140,6 +140,7 @@ main {
 }
 
 .reset-link {
+    font-family: "Poppins", sans-serif !important;
     justify-content: initial;
     align-items: initial;
     margin-top: 0;
@@ -147,6 +148,7 @@ main {
     display: inline;
     padding-left: 0;
     padding-right: 0;
+    font-size: medium;
     width: 20px;
 }
 

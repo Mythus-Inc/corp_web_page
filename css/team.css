@@ -9,10 +9,6 @@
     font-family: "Inter", sans-serif;
 }
 
-body {
-    background-color: var(--body-background);
-}
-
 .card-equipe h1 {
     font-size: medium;
     font-weight: 700;
@@ -27,9 +23,7 @@ body {
     margin: 0.5rem 0;
 }
 
-
 .card-equipe {
-
     display: grid;
     flex-direction: row;
     justify-content: center;
@@ -40,7 +34,6 @@ body {
     margin: 0 auto;
     margin-top: 50px;
     padding-bottom: 50px;
-
 }
 
 .card-equipe img {
@@ -78,7 +71,6 @@ a {
     display: flex;
     padding-left: 20px;
     padding-right: 20px;
-
 }
 
 .card-equipe-container-description a {
@@ -87,10 +79,6 @@ a {
     margin-bottom: 0 auto;
     font-size: x-small;
     cursor: pointer;
-}
-
-.container-nav li:hover {
-    color: var(--hover-color);
 }
 
 .card-equipe-container-description a:hover {
@@ -112,10 +100,6 @@ a {
 
 /*MOBILE CONFIGURATION*/
 @media screen and (max-width: 768px) {
-    .container-nav ul li {
-        margin: 0.5rem 0;
-    }
-
     .card-equipe {
         grid-template-columns: 1fr;
         grid-column-gap: 0;
@@ -178,16 +162,6 @@ a {
         box-shadow: none;
         scale: 1;
         transition: none;
-    }
-
-}
-
-/*WEB CONFIGURATION*/
-@media screen and (min-width: 768px) {
-
-    .body-container {
-        margin: 0 auto;
-        max-width: 1200px;
     }
 
 }
