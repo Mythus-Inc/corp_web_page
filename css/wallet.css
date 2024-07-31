@@ -260,34 +260,6 @@ svg {
 
 /*Web*/
 @media only screen and (min-width: 700px) {
-
-    /*   header {
-        height: 65px;
-    }
-
-    .nav-button {
-        display: none;
-    }
-
-    .nav-list {
-        display: flex;
-        justify-content: left;
-        align-content: center;
-        list-style-type: none;
-        margin-left: 80px;
-    }
-
-    .navigation li {
-        font-size: 16px;
-        padding: 20px 20px;
-        width: 80px;
-    }
-
-    .blue-line {
-        border-color: var(--header-background-color);
-        width: 70%;
-        margin-left: 70px;
-    }*/
     .apresentacao {
         padding-top: 30%;
         display: flex;
@@ -453,20 +425,18 @@ svg {
     .txt-sobre-valores h3 {
         font-weight: 500;
     }
-
-    /* 
-    .mes-ilimitado{
-        position: relative;
-        right: 50%;
-        top: 232%;
-        left: 85%;
+    .container-alinhamento{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
     .mes{
+        color: var(--nav-border-bottom);
         position: relative;
-        top: 0px;
         right: 300px;
         left: 90px;
-    }*/
+    }
 
     #check {
         max-width: 25px;
